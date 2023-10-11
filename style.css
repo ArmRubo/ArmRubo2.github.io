@@ -56,7 +56,7 @@ h1 {
 
 .btn-container {
     position: relative;
-    left: 41.5%;
+    left: 44%;
     width: 50%;
 }
 
@@ -103,6 +103,7 @@ ul li {
     border-radius: 1rem;
     padding: .3rem 0 .3rem .6rem;
     width: 72%;
+    text-align: center;
 }
 
 ul li .close {
@@ -133,7 +134,7 @@ ul li .close:hover {
 }
 
 .dal {
-    left: 40.5%;
+    left: 44%;
 }
 
 .stop, .lap, .reset, .resetwdl {

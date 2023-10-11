@@ -1,0 +1,141 @@
+@import url('https://fonts.cdnfonts.com/css/menlo');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --red: #f00;
+    --yellow: #ff0;
+    --orange: #ff4500;
+    --lime: #32DD32;
+    --green: #2e6930;
+    --blue: #0041c2;
+    --violet: #b200ed;
+    --menlo: "Menlo", sans-serif;
+    --gray: #666;
+}
+
+* {
+    font-family: "Autour One";
+    transition: all .3s ease;
+}
+
+body{
+    z-index: -1000;
+    height: 1rem;
+    background: linear-gradient(95deg, lightblue, lime, green, blue, magenta, purple);
+    background-size: 400%;
+    border-radius: 30px;
+    animation: gradient 7s infinite linear;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 30%;
+    }
+    50%{
+        background-position: 70% 100%;
+    }
+    100%{
+        background-position: 0% 30%;
+    }
+}
+
+h1 {
+    margin-top: -.2rem;
+    color: rgba(255, 255, 255, .3);
+    -webkit-text-stroke: .01px var(--orange);
+    text-align: center;
+    font-size: 3rem;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 1rem;
+    border: 2px inset var(--white);
+    outline: 2px outset var(--yellow);
+    outline-offset: -.4rem;
+}
+
+.btn-container {
+    position: relative;
+    left: 41.5%;
+    width: 50%;
+}
+
+button {
+    position: relative;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, .2);
+    -webkit-text-stroke: .6px var(--green);
+}
+
+button:hover {
+    background: rgba(255, 255, 255, .5);
+    box-shadow: -.3rem .3rem .5rem var(--black);
+}
+
+button:disabled:hover {
+    background: rgba(255, 255, 255, .2);
+    box-shadow: none;
+}
+
+.timer {
+    position: relative;
+    font-size: 2.2rem;
+    color: rgba(255, 255, 255, .2);
+    -webkit-text-stroke: .5px var(--violet);
+    font-family: var(--menlo);
+    text-shadow: -.2rem .3rem .3rem var(--black);
+    text-align: center;
+}
+
+ul {
+    position: relative;
+    left: 40%;
+    width: 20%;
+}
+
+ul li {
+    margin-top: .4rem;
+    font-size: 1.2rem;
+    color: var(--violet);
+    -webkit-text-stroke: .5px var(--yellow);
+    background: rgba(0, 0, 0, .4);
+    border-radius: 1rem;
+    padding: .3rem 0 .3rem .6rem;
+    width: 72%;
+}
+
+ul li .close {
+    padding: 0 .4rem;
+    border-radius: 50%;
+    background: var(--red);
+    color: var(--black);
+    margin-left: .5rem;
+    outline: 1.2px solid var(--yellow);
+    border: 1.5px solid var(--black);
+    outline-offset: -.2rem;
+    cursor: pointer;
+}
+
+ul li .close:hover {
+    box-shadow: -.3rem .2rem .4rem var(--black);
+    outline: 1.2px solid var(--red);
+    border: 1.5px solid var(--yellow);
+    outline-offset: -.3rem;
+    background: var(--black);
+    color: var(--red);
+    -webkit-text-stroke: .5px var(--orange);
+}
+
+.resetwdl {
+    margin-left: 3.5rem;
+    margin-top: .2rem;
+}
+
+.dal {
+    left: 40.5%;
+}
+
+.stop, .lap, .reset, .resetwdl {
+    display: none;
+}

@@ -66,6 +66,10 @@ resetwdl.addEventListener('click', function() {
     clearInterval(interval);
 })
 
+dal.addEventListener('click', function() {
+    ul.innerText = '';
+})
+
 function timerFunction() {
     second++;
 

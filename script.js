@@ -67,7 +67,7 @@ resetwdl.addEventListener('click', function() {
 })
 
 dal.addEventListener('click', function() {
-    ul.innerText = '';
+    ul.innerHTML = '';
 })
 
 function timerFunction() {

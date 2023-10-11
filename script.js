@@ -18,7 +18,7 @@ startBtn.addEventListener('click', function() {
     stopBtn.style.display = 'inline';
     lap.style.display = 'inline';
     reset.style.display = 'inline';
-    btnContainer.style.left = '27.5%';
+    btnContainer.style.left = '33%';
     interval = setInterval(timerFunction, 1000)
 })
 
@@ -49,7 +49,7 @@ reset.addEventListener('click', function() {
     lap.style.display = 'none';
     reset.style.display = 'none';
     resetwdl.style.display = 'none';
-    btnContainer.style.left = '41.5%';
+    btnContainer.style.left = '44%';
     timer.innerText = addZero(hour) + ':' + addZero(minute) + ':' + addZero(second);
     clearInterval(interval);
 })

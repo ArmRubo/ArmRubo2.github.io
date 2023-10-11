@@ -61,7 +61,7 @@ resetwdl.addEventListener('click', function() {
     lap.style.display = 'none';
     reset.style.display = 'none';
     resetwdl.style.display = 'none';
-    btnContainer.style.left = '41.5%';
+    btnContainer.style.left = '44%';
     timer.innerText = addZero(hour) + ':' + addZero(minute) + ':' + addZero(second);
     clearInterval(interval);
 })
